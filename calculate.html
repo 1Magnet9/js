@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var a = 'hello ';
+        var b = 'world';
+        //console.log(a+b);
+        alert(a+b);
+
+        var c = 50;
+        var d = 100;
+        console.log("50+100等于"+(c+d));
+       // console.log("50-100等于"+c-d);         //Not a Number
+        //数字型字符串可以转成数字计算
+       // console.log('1'+1);    //11
+        //数字和字符串用+会直接连接,如果想要得到数字，加括号
+        //数字和字符串减法，如果能，会先转成数字，不能则Nan
+
+
+        //alert(2<4); //返回布尔值
+
+       // alert(2>1  &&  4<3);
+        //alert(!5<3);//返回布尔值
+
+        //类型转换
+        alert(true*1);//布尔值转成数字
+        alert('0'*1);
+       // var str = 'asf';
+        var str='    ';//空格也是有效的
+        console.log(!!str);//字符串->布尔值 非空字符串记为真，看是否为有效值
+        //非0的数字为真
+        alert(typeof str);
+
+    </script>
+</body>
+</html>
