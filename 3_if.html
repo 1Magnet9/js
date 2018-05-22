@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var c = "";
+        if(c)
+        {
+            console.log("ok");
+        }
+        else console.log("no");//空
+
+
+
+
+
+        var a = 5;
+        switch(a)
+        {
+            case 5:console.log(a*5);break;//break 下面就不执行了
+            case 1: console.log(a);
+            case 2:console.log(a*2);
+
+        }
+
+
+
+        var b = 'A';
+        switch(b){
+            case 'A':
+            case 'a':console.log(b);
+            default: console.log("都不满足");
+        }
+
+
+
+        for(var i = 0;i<10;i++)
+        {
+            //console.log(i);
+        }
+        //一开始就不成立的时候第一次才有差别
+        i = 2;
+        while(i<5){
+            console.log(i);
+            i++;
+        }
+        i = 5;
+        do{
+            console.log(i);
+            i++;
+        }while(i<5);
+
+        function ac(){
+            console.log('aaa');
+        }
+        ac();
+       function bb(x,y){
+            return x*y;//不给返回值 默认 undefined
+        }
+        var z ;
+        z = bb(2,3);
+        console.log(z);
+
+
+
+      //isNaN 判断是否为非数字
+
+
+
+
+
+      /*  var wide=window.prompt("请输入三角形的底边长度！","");
+        var high=window.prompt("请输入三角形的高！","");
+        var area=wide*high/2;
+        if (area) {//判断用户是否输入的是数字
+            alert("三角形的面积为"+area);
+        } else {
+            alert("您的输入有误!");
+        }
+*/
+
+
+
+        var p = function(){
+            console.log('hhh');
+        }
+        p();
+
+        var ppp;
+      //  console.log(ppp);
+        var ppp = 5;
+        console.log(ppp);//变量提升....
+
+        bbb();  /*函数提升*/
+        function bbb(){
+            console.log('hehehe');
+        }
+
+    </script>
+
+</body>
+</html>
