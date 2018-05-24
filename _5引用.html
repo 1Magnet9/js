@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+       // var o=new Object();
+            //变量在内存中
+        //内存，临时存储数据；释放内存，垃圾内存；
+        //出现new就会在堆里分配空间，将o放在栈里面，将对象放在堆里面
+        //变量所在的位置就是值所在的位置，
+        //0->通过指针引用->new Object();每一个对象在堆里都有地址，o=（一个16进制的数）;
+        //o的值是一个数
+
+       //值传递
+     /*   var a = 5;
+        function test(b){ //形参局部变量
+            b = 6;
+        }
+        test(a);
+        alert(b);*/
+
+
+        //引用传递
+
+        var o1 = new Object();
+        o1.name='aa';
+        function test(o2){
+            o2.name = 'bb';
+        }
+        test(o1);       //o1是一个值，o1的地址;o1的引用给了o2，这两个变量指向了同一个变量
+       alert(o1);
+        console.log(o1);
+
+       var a = 5;
+       var b = a;
+       b = 6;
+       console.log(a);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
