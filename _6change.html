@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>类型转换</title>
+</head>
+<body>
+    <script>
+
+        //+
+        //有字符串的就会拼接成字符串，布尔型为0/1
+        //-
+        //数值运算
+
+        //强制类型转换
+        var a = "5";
+        var b = 4;
+        var c ="aaa";
+        console.log(Number(a)+b);
+        console.log(Number(c)+b);           //Nan
+
+
+        var s = "abc";
+        //s = new String(s);默认做的，将基本数据类型变为引用类型
+
+        //两个句子使用上没什么区别，但一个是基本数据类型，另一个是引用类型
+       // s.length;
+
+        console.log(parseFloat("12px"));
+        console.log(parseFloat("12abc"));
+        console.log(parseFloat("12.34.34"));
+        console.log(parseFloat("abc12"));
+
+        console.log(parseInt("AB"));
+        console.log(parseInt("AB",16));//按16进制计算AB
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
