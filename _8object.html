@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //oo(object oriented)->OOA,OOD,OOP  oo面向对象,OOA面向对象分析 OOD面向对象设计 OOP面向对象编程
+        /*var o1 = new Object();
+        o1.name = 'aa';
+        o1.age = 22;
+        o1.sayHello = function(){               //方法中，this指向前面的对象
+            alert(this.name + 'sayHeloo!');     //this是对当前对象的引用，只能限定在对象的方法中
+        }
+        o1.sayHello();*/
+        function test(){                    //普通函数，全局函数
+                                             //在普通函数中，this指向window；
+            console.log(this);//window,指的是整个浏览器，document是当前文件
+        }
+        test();             //window.test();全局的
+
+        //断点停
+    </script>
+</body>
+</html>

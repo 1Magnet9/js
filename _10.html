@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = 5;
+    var b = "abc";
+    var c = true;
+    var d;
+    var e = null;
+    var o ={ };
+    var arr=[3,4];//arr 是由Array构造函数构造出来的
+    console.log(typeof e );//object
+    console.log(typeof d);//undefined
+    console.log(typeof o);//new object
+    console.log(typeof arr);//new object;new array()
+    console.log(o instanceof Array);//继承：instanceof有继承的概念    console.log(arr.constructor == Array);
+    console.log(arr.constructor == Object);//不等于object，是object实例，但不是object构造函数；因为是通过new array构造出来的；对象.属性
+    //普通函数可以继承，构造函数不能继承
+
+</script>
+</body>
+</html>
